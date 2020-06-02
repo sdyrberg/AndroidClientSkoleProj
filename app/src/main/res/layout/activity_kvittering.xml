@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kvittering">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+tools:layout_editor_absoluteX="0dp"
+tools:layout_editor_absoluteY="-27dp">
+
+<TextView
+    android:layout_width="155dp"
+    android:layout_height="50dp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:textSize="32dp"
+    android:textAlignment="center"
+    android:id="@+id/bordHeader"
+    />
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering1"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering1"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering1"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering2"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering2"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering2"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering3"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering3"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering3"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>        <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering4"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering4"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering4"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>        <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering5"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering5"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering5"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering6"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering6"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering6"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering7"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering7"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering7"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering8"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering8"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering8"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/AntalKvittering9"
+        android:paddingLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/SizeKvittering9"
+
+        android:layout_width="155dp"
+        android:layout_height="50dp" android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/typeKvittering9"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_gravity="right" />
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:text="Send Order"
+            android:layout_width="206dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_gravity="left"
+            android:id="@+id/sendOrderButton"/>
+
+        <Button
+            android:text="Annuler"
+            android:id="@+id/clearOrderButton"
+            android:layout_width="206dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal"
+            android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+    </ScrollView>

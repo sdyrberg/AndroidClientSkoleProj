@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bord1">
+
+    <Button
+        android:id="@+id/bestilling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drikke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/seating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seating"
+        app:layout_constraintBottom_toTopOf="@+id/bestilling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/betaling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Betaling"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bestilling" />
+
+    <TextView
+        android:id="@+id/BordNummerHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/seating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/frokostKnap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frokost"
+        app:layout_constraintBottom_toTopOf="@+id/betaling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bestilling" />
+
+    <Button
+        android:id="@+id/aftenKnapBord1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aften"
+        app:layout_constraintBottom_toTopOf="@+id/bestilling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

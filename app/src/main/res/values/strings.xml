@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Login</string>
+
+    <string-array name="antal">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="frokostMenu">
+        <item>FrokostBøf</item>
+        <item>Svinemørbrad</item>
+        <item>Kyllingebryst</item>
+    </string-array>
+    <string-array name="bøfStatus">
+        <item>Rosa</item>
+        <item>Medium</item>
+        <item>Gennemstegt</item>
+    </string-array>
+    <string-array name="aften">
+        <item>Ribeye</item>
+        <item>Steak</item>
+        <item>Oksemørbrad</item>
+        <item>Hakkebøf</item>
+        <item>Fiskefilet</item>
+        <item>Spareribs</item>
+        <item>Svinemørbrad</item>
+        <item>Grillet Kylingebryst</item>
+        <item>Burger</item>
+    </string-array>
+    <string-array name="opgrader">
+        <item></item>
+        <item>Ja</item>
+    </string-array>
+    <string-array name="drikke">
+        <item>Pilsner</item>
+        <item>Classic</item>
+        <item>Mørk</item>
+        <item>IPA</item>
+        <item>Free</item>
+        <item>Cider</item>
+        <item>Pepsi</item>
+        <item>Pepsi Max</item>
+        <item>Fanta</item>
+        <item>Sprite</item>
+        <item>Vand</item>
+    </string-array>
+
+    <string-array name="størrelse">
+        <item>30 cl</item>
+        <item>40 cl</item>
+        <item>50 cl</item>
+        <item>75 cl</item>
+    </string-array>
+    <string-array name="bøf">
+        <item>Rød</item>
+        <item>Medium-rød</item>
+        <item>Medium</item>
+        <item>Well done</item>
+    </string-array>
+</resources>

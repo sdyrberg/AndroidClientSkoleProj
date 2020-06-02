@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bestilling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-27dp">
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:id="@+id/bordHeader"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <Spinner
+                android:id="@+id/spinnerRowOneBestil1"
+
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                 />
+            <Spinner
+                android:id="@+id/spinnerRowTwoBestil1"
+
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="right" />
+
+            <Spinner
+                android:id="@+id/spinnerRowThreeBestil1"
+
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="right" />
+            <Button
+                android:id="@+id/buttonOrderExtra1"
+                android:text="+"
+                android:gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Spinner
+                android:id="@+id/spinnerRowOneBestil2"
+
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                />
+            <Spinner
+                android:id="@+id/spinnerRowTwoBestil2"
+
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="right" />
+
+            <Spinner
+                android:id="@+id/spinnerRowThreeBestil2"
+
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="right" />
+            <Button
+                android:id="@+id/buttonOrderExtra2"
+                android:text="+"
+                android:gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Spinner
+                android:id="@+id/spinnerRowOneBestil3"
+
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                />
+            <Spinner
+                android:id="@+id/spinnerRowTwoBestil3"
+
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="right" />
+
+            <Spinner
+                android:id="@+id/spinnerRowThreeBestil3"
+
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="right" />
+            <Button
+                android:id="@+id/buttonOrderExtra3"
+                android:text="+"
+                android:gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                />
+
+
+        </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+        <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <Spinner
+            android:id="@+id/spinnerRowOneBestil4"
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:id="@+id/spinnerRowTwoBestil4"
+
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spinnerRowThreeBestil4"
+
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+            <Button
+                android:id="@+id/buttonOrderExtra4"
+                android:text="+"
+                android:gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <Spinner
+            android:id="@+id/spinnerRowOneBestil5"
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:id="@+id/spinnerRowTwoBestil5"
+
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spinnerRowThreeBestil5"
+
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+            <Button
+                android:id="@+id/buttonOrderExtra5"
+                android:text="+"
+                android:gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                />
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <Spinner
+            android:id="@+id/spinnerRowOneBestil6"
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:id="@+id/spinnerRowTwoBestil6"
+
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spinnerRowThreeBestil6"
+
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+            <Button
+                android:id="@+id/buttonOrderExtra6"
+                android:text="+"
+                android:gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        android:showDividers="middle"
+        <Spinner
+            android:id="@+id/spinnerRowOneBestil7"
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:id="@+id/spinnerRowTwoBestil7"
+
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spinnerRowThreeBestil7"
+
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Button
+            android:id="@+id/buttonOrderExtra7"
+            android:text="+"
+            android:gravity="left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        android:showDividers="middle"
+        <Spinner
+            android:id="@+id/spinnerRowOneBestil8"
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:id="@+id/spinnerRowTwoBestil8"
+
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spinnerRowThreeBestil8"
+
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Button
+            android:id="@+id/buttonOrderExtra8"
+            android:text="+"
+            android:gravity="left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <Spinner
+            android:id="@+id/spinnerRowOneBestil9"
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:id="@+id/spinnerRowTwoBestil9"
+
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spinnerRowThreeBestil9"
+
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="right" />
+
+        <Button
+            android:id="@+id/buttonOrderExtra9"
+            android:text="+"
+            android:gravity="left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/tilKvitering"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
