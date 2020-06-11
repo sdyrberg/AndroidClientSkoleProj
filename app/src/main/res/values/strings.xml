@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Login</string>
+    <string-array name="ekstra">
+        <item>0</item>
+        <item>Item1</item>
+        <item>Item2</item>
+        <item>Item3</item>
+        <item>Item4</item>
+        <item>Item5</item>
+        <item>Item6</item>
+        <item>Item7</item>
 
+    </string-array>
     <string-array name="antal">
         <item>0</item>
         <item>1</item>

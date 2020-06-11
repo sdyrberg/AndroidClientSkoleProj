@@ -86,6 +86,17 @@ public class Kvittering extends AppCompatActivity {
         final String type8 = sharedPreferences.getString("TypeBestillingText8","");
         final String type9 = sharedPreferences.getString("TypeBestillingText9","");
 
+        final String ekstra1 = sharedPreferences.getString("Item1","none");
+        final String ekstra2 = sharedPreferences.getString("Item2","none");
+        final String ekstra3 = sharedPreferences.getString("Item3","none");
+        final String ekstra4 = sharedPreferences.getString("Item4","none");
+        final String ekstra5 = sharedPreferences.getString("Item5","none");
+        final String ekstra6 = sharedPreferences.getString("Item6","none");
+        final String ekstra7 = sharedPreferences.getString("Item7","none");
+        final String ekstra8 = sharedPreferences.getString("Item8","none");
+        final String ekstra9 = sharedPreferences.getString("Item9","none");
+
+
 
 
         typeKvittering1.setText(type1);
@@ -133,7 +144,7 @@ public class Kvittering extends AppCompatActivity {
                 editor.putString("antalBestillingText7", ""); editor.putString("StørrelseBestillingsText7", ""); editor.putString("TypeBestillingText7", "");
                 editor.putString("antalBestillingText8", ""); editor.putString("StørrelseBestillingsText8", ""); editor.putString("TypeBestillingText8", "");
                 editor.putString("antalBestillingText9", ""); editor.putString("StørrelseBestillingsText9", ""); editor.putString("TypeBestillingText9", "");
-
+                editor.apply();
 
 
             }
@@ -145,9 +156,14 @@ public class Kvittering extends AppCompatActivity {
             public void onClick(View v) {
 
                 new SendMessage().execute(
-                         menuVælger + "-" + bordNummer + "-" +antal1 + "-"  + type1 + "-"  + size1 + "-"  + antal2 + "-"  + type2 + "-"  + size2 + "-"  + antal3 + "-"  + type3 + "-"  + size3 + "-" +
-                         antal4 + "-" + type4 + "-" + size4 + "-" + antal5 + "-" + type5 + "-" + size5 + "-" + antal6 + "-" + type6 + "-" + size6 + "-" +
-                         antal7 + "-" + type7 + "-" + size7 + "-" + antal8 + "-" + type8 + "-" + size8 + "-" + antal9 +  "-" + type9 + "-" + size9);
+                         menuVælger + "-" + bordNummer + "-" +antal1 + "-"  + type1 + "-"  + size1 + "-" +ekstra1+ "-"  + antal2 + "-"  + type2 + "-"  + size2 + "-"+ekstra2+ "-"  + antal3 + "-"  + type3 + "-"  + size3 + "-"+ekstra3+ "-" +
+                         antal4 + "-" + type4 + "-" + size4 + "-"+ekstra4+ "-" + antal5 + "-" + type5 + "-" + size5 + "-"+ekstra5+ "-" + antal6 + "-" + type6 + "-" + size6 + "-" +ekstra6+ "-"+
+                         antal7 + "-" + type7 + "-" + size7 + "-" +ekstra7+ "-"+ antal8 + "-" + type8 + "-" + size8 + "-"+ekstra8+ "-" + antal9 +  "-" + type9 + "-" + size9+ "-"+ ekstra9);
+
+                editor.putString("Item1", "");editor.putString("Item4", "");editor.putString("Item7", "");
+                editor.putString("Item2", "");editor.putString("Item5", "");editor.putString("Item8", "");
+                editor.putString("Item3", "");editor.putString("Item6", "");editor.putString("Item9", "");
+                editor.apply();
 
             }
         });

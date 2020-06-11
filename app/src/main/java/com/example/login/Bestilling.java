@@ -27,11 +27,18 @@ public class Bestilling extends AppCompatActivity {
         final SharedPreferences.Editor editor = sharedPreferences.edit();
         final String menuVælger = sharedPreferences.getString("menuVælger", "ERROR");
 
-
         TextView menuHeader = (TextView)(findViewById(R.id.bordHeader));
         menuHeader.setText(menuVælger);
 
-        //Spinners
+        final Button buttonExtraBestilling1 = findViewById(R.id.buttonOrderExtra1);
+        final Button buttonExtraBestilling2 = findViewById(R.id.buttonOrderExtra2);
+        final Button buttonExtraBestilling3 = findViewById(R.id.buttonOrderExtra3);
+        final Button buttonExtraBestilling4 = findViewById(R.id.buttonOrderExtra4);
+        final Button buttonExtraBestilling5 = findViewById(R.id.buttonOrderExtra5);
+        final Button buttonExtraBestilling6 = findViewById(R.id.buttonOrderExtra6);
+        final Button buttonExtraBestilling7 = findViewById(R.id.buttonOrderExtra7);
+        final Button buttonExtraBestilling8 = findViewById(R.id.buttonOrderExtra8);
+        final Button buttonExtraBestilling9 = findViewById(R.id.buttonOrderExtra9);
 
         final Spinner spinnerRowOneBestil1 = findViewById(R.id.spinnerRowOneBestil1);
         final Spinner spinnerRowOneBestil2 = findViewById(R.id.spinnerRowOneBestil2);
@@ -62,6 +69,91 @@ public class Bestilling extends AppCompatActivity {
         final Spinner spinnerDrik7 = findViewById(R.id.spinnerRowThreeBestil7);
         final Spinner spinnerDrik8 = findViewById(R.id.spinnerRowThreeBestil8);
         final Spinner spinnerDrik9 = findViewById(R.id.spinnerRowThreeBestil9);
+
+        final Intent tilExtra = new Intent(getApplicationContext(),AddonMenu.class);
+
+        buttonExtraBestilling1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                editor.putString("menuLinjeValg", "Item1");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item2");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item3");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item4");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item5");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item6");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item7");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item8");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
+        buttonExtraBestilling9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                editor.putString("menuLinjeValg", "Item9");
+                editor.apply();
+                startActivity(tilExtra);
+            }
+        });
 
 
         //Adapters

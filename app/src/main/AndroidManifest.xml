@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Kvittering"></activity>
+        <activity android:name=".AddonMenu"></activity>
+        <activity android:name=".Kvittering" />
         <activity android:name=".Bestilling" />
         <activity android:name=".Bord1" />
         <activity android:name=".Borde" />

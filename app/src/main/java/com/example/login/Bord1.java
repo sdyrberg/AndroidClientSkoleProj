@@ -27,9 +27,9 @@ public class Bord1 extends AppCompatActivity {
 
         Button frokostKnap = findViewById(R.id.frokostKnap);
         Button aftenKnapBord1 = findViewById(R.id.aftenKnapBord1);
-        Button Seating = (Button) (findViewById(R.id.seating));
-        final Button Bestilling = (Button) (findViewById(R.id.bestilling));
-        Button Betaling = (Button) (findViewById(R.id.betaling));
+        Button Seating = (findViewById(R.id.seating));
+        final Button Bestilling = (findViewById(R.id.bestilling));
+        Button Betaling = (findViewById(R.id.betaling));
 
         final SharedPreferences sharedPreferences = getSharedPreferences("SaveData", Context.MODE_PRIVATE);
         final String bordNummer = sharedPreferences.getString("bordClicked","DATA NOT FOUND");
@@ -37,6 +37,9 @@ public class Bord1 extends AppCompatActivity {
 
         TextView bordNummerHeader = (TextView) (findViewById(R.id.BordNummerHeader));
         bordNummerHeader.setText(bordNummer);
+        Date currentTime = Calendar.getInstance().getTime();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("hh.mm.ss");
+        final String output = dateFormat.format(currentTime);
 
         aftenKnapBord1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,119 +61,192 @@ public class Bord1 extends AppCompatActivity {
             }
         });
 
+        Bestilling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.putString("menuVælger", "Drikke");
+                editor.apply();
+                Intent bestilling = new Intent(getApplicationContext(), Bestilling.class);
+                startActivity(bestilling);
+            }
+        });
+
+
+        Betaling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (bordNummer.equals("Bord1")) {
+                    editor.putString("tidBord1", "Ledigt klokken: " + output);
+                    editor.apply();
+
+                }
+                if (bordNummer.equals("Bord2")) {
+                    editor.putString("tidBord2", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord3")) {
+                    editor.putString("tidBord3", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord4")) {
+                    editor.putString("tidBord4", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord5")) {
+                    editor.putString("tidBord5", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord6")) {
+                    editor.putString("tidBord6", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord7")) {
+                    editor.putString("tidBord7", "Ledigt klokken: " + output);
+                }
+                if (bordNummer.equals("Bord8"))  {
+                    editor.putString("tidBord8", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord9"))  {
+                    editor.putString("tidBord9", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord10"))  {
+                    editor.putString("tidBord10", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord11"))  {
+                    editor.putString("tidBord11", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord12"))  {
+                    editor.putString("tidBord12", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+
+                if (bordNummer.equals("Bord13"))  {
+                    editor.putString("tidBord3", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord14"))  {
+                    editor.putString("tidBord44", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+                if (bordNummer.equals("Bord15"))  {
+                    editor.putString("tidBord15", "Ledigt klokken: " + output);
+                    editor.apply();
+                }
+
+            }
+
+        });
+
+        
+
         Seating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Date currentTime = Calendar.getInstance().getTime();
-                SimpleDateFormat dateFormat = new SimpleDateFormat("hh.mm.ss");
-                String output = dateFormat.format(currentTime);
 
-                if(bordNummer.equals("Bord 1")) {
+
+                if(bordNummer.equals("Bord1")) {
 
                     editor.putString("tidBord1", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 2")) {
+                if(bordNummer.equals("Bord2")) {
 
                     editor.putString("tidBord2", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 3")) {
+                if(bordNummer.equals("Bord3")) {
 
                     editor.putString("tidBord3", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 4")) {
+                if(bordNummer.equals("Bord4")) {
 
                     editor.putString("tidBord4", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 5")) {
+                if(bordNummer.equals("Bord5")) {
 
                     editor.putString("tidBord5", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 6")) {
+                if(bordNummer.equals("Bord6")) {
 
                     editor.putString("tidBord6", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 7")) {
+                if(bordNummer.equals("Bord7")) {
 
                     editor.putString("tidBord7", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 8")) {
+                if(bordNummer.equals("Bord8")) {
 
                     editor.putString("tidBord8", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 9")) {
+                if(bordNummer.equals("Bord9")) {
 
                     editor.putString("tidBord5", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 9")) {
-
-                    editor.putString("tidBord5", output);
-                    editor.apply();
-
-                    new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
-                }
-                if(bordNummer.equals("Bord 10")) {
+                if(bordNummer.equals("Bord10")) {
 
                     editor.putString("tidBord10", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 11")) {
+                if(bordNummer.equals("Bord11")) {
 
                     editor.putString("tidBord11", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 12")) {
+                if(bordNummer.equals("Bord12")) {
 
                     editor.putString("tidBord12", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 13")) {
+                if(bordNummer.equals("Bord13")) {
 
                     editor.putString("tidBord13", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 14")) {
+                if(bordNummer.equals("Bord14")) {
 
                     editor.putString("tidBord14", output);
                     editor.apply();
 
                     new SendMessage().execute(bordNummer + " satte sig klokken: " + output);
                 }
-                if(bordNummer.equals("Bord 15")) {
+                if(bordNummer.equals("Bord15")) {
 
                     editor.putString("tidBord15", output);
                     editor.apply();
@@ -181,15 +257,6 @@ public class Bord1 extends AppCompatActivity {
             }
         });
 
-        Bestilling.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                editor.putString("menuVælger", "Drikke");
-                editor.apply();
-                Intent bestilling = new Intent(getApplicationContext(), Bestilling.class);
-                startActivity(bestilling);
-            }
-        });
     }
     public void onBackPressed() {
         Intent backtoBorde= new Intent(getApplicationContext(),Borde.class);
